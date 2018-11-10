@@ -1,6 +1,6 @@
 package main;
 
-import View.JanelaPrincipal;
+import view.JanelaPrincipal;
 
 public class Executar {
 

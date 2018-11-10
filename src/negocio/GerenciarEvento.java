@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import Util.ConferenceUtil;
+import util.ConferenceUtil;
 
 public class GerenciarEvento {
 

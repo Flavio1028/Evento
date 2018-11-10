@@ -1,4 +1,4 @@
-package View;
+package view;
 
 import java.awt.BorderLayout;
 import java.awt.Container;
@@ -15,9 +15,9 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.UIManager;
 
-import Util.ConferenceUtil;
 import negocio.EventosDia;
 import negocio.GerenciarEvento;
+import util.ConferenceUtil;
 
 public class JanelaPrincipal extends JFrame implements ActionListener {
 
