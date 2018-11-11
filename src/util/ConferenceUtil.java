@@ -16,7 +16,7 @@ public class ConferenceUtil {
 		SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy");
 		return formato.format(data);
 	}
-	
+
 	/**
 	 * Retorna a data formatada
 	 * 
@@ -27,7 +27,6 @@ public class ConferenceUtil {
 		SimpleDateFormat formato = new SimpleDateFormat("hh:mm");
 		return formato.format(data);
 	}
-
 
 	/**
 	 * Este metodo acresenta um dia para a data passada
@@ -46,14 +45,21 @@ public class ConferenceUtil {
 		return data;
 	}
 
+	/**
+	 * 
+	 * @param data
+	 * @param hora
+	 * @param minuto
+	 * @return
+	 */
 	public static Date adicionarHoraEvento(Date data, int hora, int minuto) {
 		Calendar calendar = Calendar.getInstance();
-		calendar.setTime(data); 
+		calendar.setTime(data);
 		calendar.set(Calendar.HOUR_OF_DAY, hora);
 		calendar.set(Calendar.MINUTE, minuto);
-		
+
 		data = calendar.getTime();
-		
+
 		return data;
 	}
 

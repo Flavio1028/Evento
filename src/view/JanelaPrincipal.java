@@ -26,6 +26,8 @@ public class JanelaPrincipal extends JFrame implements ActionListener {
 	private JPanel pEsquerda, pCentro;
 	public Container janela;
 	private JTextArea area = new JTextArea();
+	private JPanel pCentroAdd;
+	private JScrollPane barra_rolagem;
 
 	public void Janela() {
 		setTitle("Lista Eventos");
@@ -58,9 +60,6 @@ public class JanelaPrincipal extends JFrame implements ActionListener {
 		janela.add(pCentro, BorderLayout.CENTER);
 		setVisible(true);
 	}
-
-	private JPanel pCentroAdd;
-	private JScrollPane barra_rolagem;
 
 	public void janelaAdicionar() {
 		pCentroAdd = new JPanel(new GridLayout(0, 1, 1, 1));
@@ -96,10 +95,7 @@ public class JanelaPrincipal extends JFrame implements ActionListener {
 			for (int j = 0; j < eDia.getListaEventosDoDia().size(); j++) {
 				saida += "Nome: " + eDia.getListaEventosDoDia().get(j).getNomeEvento() + "\n";
 				saida += "Periodo: " + eDia.getListaEventosDoDia().get(j).getIndicadorPeriodoFormatado() + "\n";
-				saida += "Duração: " + eDia.getListaEventosDoDia().get(j).getDuracaoEvento() + "\n";
-				// saida += "Inicio: " +
-				// ConferenceUtil.HoraFormatada(eDia.getListaEventosDoDia().get(j).getInicioEvento())
-				// + "\n";
+				saida += "Duração: " + eDia.getListaEventosDoDia().get(j).getDuracaoEvento() + "\n\n";
 			}
 
 			saida += "\n\n";

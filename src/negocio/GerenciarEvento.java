@@ -119,12 +119,18 @@ public class GerenciarEvento {
 
 		}
 	}
-
+	
+	/**
+	 * 
+	 * @param evento
+	 * @param data
+	 * @param totalHoras
+	 * @return
+	 */
 	private Evento adicionarInformacaoEvento(Evento evento, Date data, double totalHoras) {
 		// Verifica qual o periodo
 		char indicadorPeriodo = controleIndicador ? 'M' : 'T';
 		evento.setIndicadorPeriodo(indicadorPeriodo);
-	
 		return evento;
 	}
 }
